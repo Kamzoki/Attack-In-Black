@@ -1,0 +1,46 @@
+ol{
+	position: absolute;
+	z-index: 1;
+	list-style-type: none;
+	top: 0;
+	left: 0;
+}
+
+li.mainMenu_li{
+	margin-bottom: 30px;
+	margin-top: 50px;
+	
+}
+
+#levelsMenu{
+	display: none;
+	
+}
+
+li.levelsMenu_li{
+	display: inline;
+	padding-left: 50px;
+	margin-left: 20px;
+}
+
+#intro{
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: white;
+	height: 373px;
+
+}
+#logo{
+	width: 667px;
+	height: 375px;
+	
+}
+#enter{
+	position: absolute;
+	z-index: 2;
+	width: 667px;
+	margin-bottom: 20px;
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AOT</title>
+	<script src="JS/Eren.js"></script>
+	<script src="JS/LoadImages.js"></script>
+	<script src="JS/RectangleType.js"></script>
+	<script src="JS/SpriteAnimation.js"></script>
+	<script src="JS/Titan.js"></script>
+	<script src="JS/backGround.js"></script>
+	<script src="JS/Ground.js"></script>
+
+	<style type="text/css">
+
+	#CanvasDiv{
+		position: relative;
+		width: 667px;
+		height: 375px;
+			}
+	#layer1{
+		position: absolute;
+		z-index: 0;
+		width: 667px;
+		height: 375px;
+		border:1px solid black;
+
+	}
+	#layer2{
+		position: absolute;
+		z-index: 1;
+		width: 667px;
+		height: 375px;
+		border:1px solid black;
+	
+	}
+	</style>
+	<link rel="stylesheet" href="CSS_Sheet.css">
+</head>
+<body>
+
+<div id="CanvasDiv">
+
+	<canvas id="layer1"></canvas>
+	<canvas id-"layer2"></canvas>
+		
+	<ol id="mainMenu">
+	
+		<li class="mainMenu_li">
+			<button class="mBtn" id="mBtn01" onclick="">Start Game</button>
+		</li>
+		
+		<li class="mainMenu_li">
+			<button class="mBtn" id="mBtn02" onclick="">Settings</button>
+		</li>
+		
+		<li class="mainMenu_li">
+			<button class="mBtn" id="mBtn03" onclick="">About</button>
+		</li>	
+
+		<li class="mainMenu_li">
+		<button class="mBtn" id="mBtn04" onclick="">Exit</button>
+		</li>
+	
+	</ol>
+
+
+	<ol id="levelsMenu">
+	
+		<li class="levelsMenu_li">
+			<button class="lBtn" id="lBtn01" onclick=""></button>
+		</li>
+			
+		<li class="levelsMenu_li">
+			<button class="lBtn" id="lBtn02" onclick=""></button>
+		</li>
+			
+		<li class="levelsMenu_li">
+			<button class="lBtn" id="lBtn03" onclick=""></button>
+		</li>
+	
+	</ol>
+				
+	<div id="intro">
+		
+		<img id="logo" src="Art/Logo.svg">
+		<button id="enter"  onclick="">Enter</button>
+	
+	</div>				
+
+</div>
+
+</body>
+</html>

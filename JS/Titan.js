@@ -1,0 +1,39 @@
+function Titan(x,y,width,height,image)
+{
+    //attributes
+    this.x=x;
+    this.y=y;
+    this.GroundBoundary=250;
+    this.width=width;
+    this.height=height;
+    this.image=image;
+    this.spdY=0;
+    this.spdX=SPDX;
+    this.gravity=0.5;
+    this.onGround=false;
+    this.box=new RectangleType(this.x,this.y,this.width-80,this.height);
+    //functions
+    this.updatePos=function()
+    {
+            this.box.updateLocation(this.x,this.y);
+            this.spdY+=this.gravity;
+            this.y+=this.spdY;
+            if(this.y>this.GroundBoundary)
+            {
+                this.y=this.GroundBoundary;
+                this.spdY=0;
+                this.onGround=true;
+                this.x-=this.spdX;
+            }
+        }
+    this.draw=function(ctx)
+    {
+        ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
+    }
+
+    this.updateTitan=function()
+    {
+        this.updatePos();
+        this.draw(ctx);
+    }
+}
