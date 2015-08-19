@@ -6,6 +6,16 @@ var layer1 , ctx1 , layer2 , ctx2 ;
 var menu , levels , intro;
 //Divs:-
 var start_Btn , htp_Btn , about_Btn , exit_Btn , lvl1_Btn;
+//Images needed:-
+var BG1 , BG2 , Lvl1 ;
+//Art variable:-
+var source = {
+	lvl1_BG:"Art/lvl1_BG.svg",
+	level1:"Art/level1.svg",
+	length:2
+};
+
+
 
 function  enterFun() {
 	// Enter button function
@@ -19,6 +29,16 @@ function startFun(){
 	levels.style.display="block";
 }
 
+function lvl1Press () {
+	// Level one button function
+	levels.style.display="none";
+	lvl1Fun();
+}
+
+function lvl1Fun () {
+	// Level one running function
+
+}
 
 function init () {
 	// Initilaizing
@@ -35,5 +55,11 @@ function init () {
 	//------------------------------------------- 
 	menu = document.getElementById('Menu'); 
 	levels = document.getElementById('Levels'); 
-	intro = document.getElementById('Intro'); 
+	intro = document.getElementById('Intro');
+	//------------------------------------------
+	loadImages( source , function (images) {
+		// Loading Artworks 
+		BG1 = images.lvl1_BG;
+		Lvl1 = images.level1;
+	}); 
 }
