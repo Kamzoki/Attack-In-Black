@@ -1,104 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>AOT</title>
-	<script src="JS/Eren.js"></script>
-	<script src="JS/LoadImages.js"></script>
-	<script src="JS/RectangleType.js"></script>
-	<script src="JS/SpriteAnimation.js"></script>
-	<script src="JS/Titan.js"></script>
-	<script src="JS/backGround.js"></script>
-	<script src="JS/Ground.js"></script>
+	<title>AIT</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Sheet.css">
 
-	<style type="text/css">
 
-#logo{
-	width: 700px;
-	height: 375px;
-	animation-name:teamLogo;
-	animation-timeing-function:ease;
-	animation-iteration-count:1;
-	animation-duration:5s;
-}
-
-#enter{
-	position: absolute;
-	z-index: 2;
-	width: 667px;
-	top:0;
-	animation-name:enterAni;
-	animation-timeing-function:ease-in;
-	animation-iteration-count:1;
-	animation-duration:9s;
-}
-
-@keyframes teamLogo{
-		0% {opacity: 0;}
-		25%{opacity: 1;}
-		55%{opacity: 1;}
-		83%{opacity: 1;}
-		90%{opacity: 1;}
-	}
-
-@keyframes enterAni{
-		0%{opacity: 0;}
-		100%{opacity: 1;}
-	}
-
-	</style>
-	<link rel="stylesheet" href="CSS_Sheet.css">
 </head>
 <body>
 
-<div id="CanvasDiv">
+<div id="Container">
+	
+	<canvas id="Layer1"></canvas>
+	<canvas id="Layer2"></canvas>
 
-	<canvas id="layer1"></canvas>
-	<canvas id-"layer2"></canvas>
+	<div id="Menu">
 		
-	<ol id="mainMenu">
-	
-		<li class="mainMenu_li">
-			<button class="mBtn" id="mBtn01" onclick="">Start Game</button>
-		</li>
+		<ol>
+			<li> <button onclick="">Start</button> </li>
+			<li> <button onclick="">How to Play</button> </li>
+			<li> <button onclick="">About</button> </li>
+			<li> <button onclick="">Exit</button> </li>
+		</ol>
+
+	</div>
+
+	<div id="Levels">
 		
-		<li class="mainMenu_li">
-			<button class="mBtn" id="mBtn02" onclick="">Settings</button>
-		</li>
-		
-		<li class="mainMenu_li">
-			<button class="mBtn" id="mBtn03" onclick="">About</button>
-		</li>	
+		<ol>
+			<li> <button onclick=""></button> </li>
+			<li> <button onclick=""></button> </li>
+			<li> <button onclick=""></button> </li>
+		</ol>
 
-		<li class="mainMenu_li">
-		<button class="mBtn" id="mBtn04" onclick="">Exit</button>
-		</li>
-	
-	</ol>
+	</div>
 
+	<div id="Intro">
 
-	<ol id="levelsMenu">
-	
-		<li class="levelsMenu_li">
-			<button class="lBtn" id="lBtn01" onclick=""></button>
-		</li>
-			
-		<li class="levelsMenu_li">
-			<button class="lBtn" id="lBtn02" onclick=""></button>
-		</li>
-			
-		<li class="levelsMenu_li">
-			<button class="lBtn" id="lBtn03" onclick=""></button>
-		</li>
-	
-	</ol>
-				
-	<div id="intro">
-		
-		<img id="logo" src="Art/Logo.svg">
-		<button id="enter"  onclick="">Enter</button>
-	
-	</div>				
+	<img src="Art/Logo.svg">
+	<button id="Enter" onclick="">Enter</button>
 
+	</div>
 </div>
 
 </body>
