@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AIT</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Sheet.css">
+
+
+	<style type="text/css">
+	@keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@--webkit-keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-moz-keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-o-keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+
+	@keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-webkit-keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-moz-keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-o-keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+
+	#Intro > img{
+		animation : Intro 5s 1;
+		-webkit-animation: Intro 5s 1;
+		-moz-animation: Intro 5s 1;
+		-o-animation: Intro 5s 1;
+	}
+
+	#Enter{
+		animation : Entering 9s 1;
+		animation-timeing-function: ease-out;
+		-webkit-animation: Entering 9s 1;
+		-moz-animation: Entering 9s 1;
+		-o-animation: Entering 9s 1;		
+	}
+	</style>
+
+</head>
+<body>
+
+<div id="Container">
+	
+	<canvas id="Layer1"></canvas>
+	<canvas id="Layer2"></canvas>
+
+	<div id="Menu">
+		
+		<ol>
+			<li> <button onclick="">Start</button> </li>
+			<li> <button onclick="">How to Play</button> </li>
+			<li> <button onclick="">About</button> </li>
+			<li> <button onclick="">Exit</button> </li>
+		</ol>
+
+	</div>
+
+	<div id="Levels">
+		
+		<ol>
+			<li> <button onclick=""></button> </li>
+			<li> <button onclick=""></button> </li>
+			<li> <button onclick=""></button> </li>
+		</ol>
+
+	</div>
+
+	<div id="Intro">
+
+	<img src="Art/Logo.svg">
+	<button id="Enter" onclick="">Enter</button>
+
+	</div>
+</div>
+
+</body>
+</html>
