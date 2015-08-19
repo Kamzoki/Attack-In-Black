@@ -5,6 +5,65 @@
 	<link rel="stylesheet" type="text/css" href="CSS_Sheet.css">
 
 
+	<style type="text/css">
+	@keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@--webkit-keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-moz-keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-o-keyframes Intro{
+		0%{opacity: 0;}
+		50%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+
+	@keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-webkit-keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-moz-keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+	@-o-keyframes Entering{
+		0%{opacity: 0;}
+		90%{opacity: 1;}
+		100%{opacity: 1;}
+	}
+
+	#Intro > img{
+		animation : Intro 5s 1;
+		-webkit-animation: Intro 5s 1;
+		-moz-animation: Intro 5s 1;
+		-o-animation: Intro 5s 1;
+	}
+
+	#Enter{
+		animation : Entering 9s 1;
+		animation-timeing-function: ease-out;
+		-webkit-animation: Entering 9s 1;
+		-moz-animation: Entering 9s 1;
+		-o-animation: Entering 9s 1;		
+	}
+	</style>
+
 </head>
 <body>
 

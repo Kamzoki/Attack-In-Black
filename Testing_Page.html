@@ -65,7 +65,7 @@
 	</style>
 
 </head>
-<body>
+<body onload="init()">
 
 <div id="Container">
 	
@@ -75,10 +75,10 @@
 	<div id="Menu">
 		
 		<ol>
-			<li> <button onclick="">Start</button> </li>
-			<li> <button onclick="">How to Play</button> </li>
-			<li> <button onclick="">About</button> </li>
-			<li> <button onclick="">Exit</button> </li>
+			<li> <button id="Start" onclick="startFun()">Start</button> </li>
+			<li> <button id="Htp" onclick="">How to Play</button> </li>
+			<li> <button id="About" onclick="">About</button> </li>
+			<li> <button id="Exit" onclick="">Exit</button> </li>
 		</ol>
 
 	</div>
@@ -86,9 +86,9 @@
 	<div id="Levels">
 		
 		<ol>
-			<li> <button onclick=""></button> </li>
-			<li> <button onclick=""></button> </li>
-			<li> <button onclick=""></button> </li>
+			<li> <button id="Lvl1" onclick=""></button> </li>
+			<li> <button id="" onclick=""></button> </li>
+			<li> <button id="" onclick=""></button> </li>
 		</ol>
 
 	</div>
@@ -96,10 +96,11 @@
 	<div id="Intro">
 
 	<img src="Art/Logo.svg">
-	<button id="Enter" onclick="">Enter</button>
+	<button id="Enter" onclick="enterFun()">Enter</button>
 
 	</div>
 </div>
 
+<script src="JS/CoreGame.js"></script>
 </body>
 </html>
