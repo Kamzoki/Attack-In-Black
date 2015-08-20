@@ -15,6 +15,11 @@ var source = {
 	length:2
 };
 
+loadImages( source , function (images) {
+	// Loading Artworks 
+	BG1 = images.lvl1_BG;
+	Lvl1 = images.level1;
+});
 
 
 function  enterFun() {
@@ -57,9 +62,5 @@ function init () {
 	levels = document.getElementById('Levels'); 
 	intro = document.getElementById('Intro');
 	//------------------------------------------
-	loadImages( source , function (images) {
-		// Loading Artworks 
-		BG1 = images.lvl1_BG;
-		Lvl1 = images.level1;
-	}); 
+ 
 }
