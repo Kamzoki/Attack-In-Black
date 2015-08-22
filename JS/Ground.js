@@ -7,7 +7,7 @@ x,y,width,height,image,spdX
 /*{
 draw
 }*/
-function Ground(x,y,width,height,image)
+function Ground(x,y,width,height,image,SPDX)
 {
     //attributes
     this.x=x;
@@ -15,11 +15,13 @@ function Ground(x,y,width,height,image)
     this.width=width;
     this.height=height;
     this.image=image;
-    //this.SPDX =SPDX;
+    this.SPDX = SPDX;
     //functions
     this.draw=function(ctx)
     {
+        ctx.clearRect(this.x,this.y,this.width,this.height);
         ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
-       // this.x -= this.SPDX;    
+        this.x -= this.SPDX;
+
     }
 }
