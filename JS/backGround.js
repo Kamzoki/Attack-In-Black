@@ -22,6 +22,7 @@ function backGround(x,y,width,height,image,SPDX)
         
         ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
         ctx.drawImage(this.image,this.x+this.width,this.y,this.width,this.height);
+<<<<<<< HEAD
         this.x -= this.SPDX;
         if (this.x < -this.width)
         {
@@ -29,5 +30,8 @@ function backGround(x,y,width,height,image,SPDX)
             ctx.clearRect(-this.width,this.y,this.width,this.height);
         }    
 
+=======
+        this.x -= 1;    
+>>>>>>> master
     }
 }
