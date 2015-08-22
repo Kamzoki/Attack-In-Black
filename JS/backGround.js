@@ -20,11 +20,6 @@ function backGround(x,y,width,height,image)
     {
         ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
         ctx.drawImage(this.image,this.x+this.width,this.y,this.width,this.height);
-        this.x -= 1;
-        if (this.x < -this.width)
-        {
-            this.x = 0;
-            ctx.clearRect(-this.width,this.y,this.width,this.height);
-        }    
+        this.x -= 1;    
     }
 }

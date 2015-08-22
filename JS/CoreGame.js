@@ -8,37 +8,15 @@ var menu , levels , intro;
 var start_Btn , htp_Btn , about_Btn , exit_Btn , lvl1_Btn;
 //Images needed:-
 var BG1 , BG2 , Lvl1 ;
+//drawing objects 
+var BG1_Obj , BG2_Obj , Lvl1_Obj;
 //Art variable:-
 var source = {
-	lvl1_BG:"Art/lvl1_BG.svg",
+	lvl1_BG:"Art/lvl1_BG.jpg",
 	level1:"Art/level1.svg",
 	length:2
 };
-
-
-
-function  enterFun() {
-	// Enter button function
-	menu.style.display = "block";
-	intro.style.display = "none";
-}
-
-function startFun(){
-	//Start buton function
-	menu.style.display="none";
-	levels.style.display="block";
-}
-
-function lvl1Press () {
-	// Level one button function
-	levels.style.display="none";
-	lvl1Fun();
-}
-
-function lvl1Fun () {
-	// Level one running function
-
-}
+// Loading art work 
 
 function init () {
 	// Initilaizing
@@ -58,8 +36,29 @@ function init () {
 	intro = document.getElementById('Intro');
 	//------------------------------------------
 	loadImages( source , function (images) {
-		// Loading Artworks 
+	// Loading Artworks 
 		BG1 = images.lvl1_BG;
 		Lvl1 = images.level1;
-	}); 
+		BG1_Obj = new Ground(0,400,200,100,BG1);
+	});
+
+}
+
+function  enterFun() {
+	// Enter button function
+	menu.style.display = "block";
+	intro.style.display = "none";
+}
+
+function startFun(){
+	//Start buton function
+	menu.style.display="none";
+	levels.style.display="block";
+}
+
+function lvl1Fun () {
+	// Level one running function
+	levels.style.display="none";
+	BG1_Obj.draw(ctx1);
+	requestAnimationFrame(lvl1Fun);
 }

@@ -15,16 +15,11 @@ function Ground(x,y,width,height,image)
     this.width=width;
     this.height=height;
     this.image=image;
+    //this.SPDX =SPDX;
     //functions
     this.draw=function(ctx)
     {
         ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
-        ctx.drawImage(this.image,this.x+this.width,this.y,this.width,this.height);
-        this.x -= SPDX;
-        if (this.x < -this.width)
-        {
-            this.x = 0;
-            ctx.clearRect(-this.width,this.y,this.width,this.height);
-        }    
+       // this.x -= this.SPDX;    
     }
 }
