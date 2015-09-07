@@ -51,10 +51,7 @@ function Eren(x,y,width,height,sprite1,sprite2)
     {
         if(e.keyCode==32)
         {
-        	jumping = document.getElementById('jumping');
             eren.startJump();
-            running.pause();
-            jumping.play();
         }
     
     }
@@ -79,12 +76,9 @@ function Eren(x,y,width,height,sprite1,sprite2)
     }
     this.drawSprite1=function()
     {
-    	running = document.getElementById('running');
         this.sprite1.start();
         eren.sprite2.xframeIndex = 0;
-        eren.sprite2.yframeIndex = 0;
-	    running.loop = true;
-        running.play();    
+        eren.sprite2.yframeIndex = 0;    
     }
     this.drawSprite2=function()
     {

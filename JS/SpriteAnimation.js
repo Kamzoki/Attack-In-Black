@@ -1,4 +1,3 @@
-
 function Sprite(options) {
     this.active = true;
     this.x = options.x;
@@ -108,13 +107,11 @@ function Sprite(options) {
                     this.xframeIndex = 0;
                     this.yframeIndex = 0;
                 }
-
                 //update x emptyIndex
                 if (xEmptyIndex > 0)
                     xEmptyIndex--;
                 else {
                     xEmptyIndex = this.NOFX - 1;
-
                     //update y emptyIndex
                     if (yEmptyIndex > 0)
                         yEmptyIndex--;
