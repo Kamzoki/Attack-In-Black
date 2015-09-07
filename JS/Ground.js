@@ -22,6 +22,7 @@ function Ground(x,y,width,height,image,SPDX)
         ctx.clearRect(this.x,this.y,this.width,this.height);
         ctx.drawImage(this.image,this.x,this.y,this.width,this.height);
         this.x -= this.SPDX;
+        //lol
 
     }
 }
